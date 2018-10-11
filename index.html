@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Image Slider</title>
+	<link rel="stylesheet" href="../assets/css/reset.css">
+	<style>
+
+		/* === DEMO STYLES ===*/
+		h1 {
+			font-size:24px;
+			text-align:center;
+			margin:20px auto;
+		}
+		#slider {
+			width: 100%;
+			height: 400px;
+			/* overflow: hidden; */
+			margin: 0 auto;
+		}
+
+		#slider .slides {
+			display: block;
+			height: 400px; /* height:auto if image content instead of background images */
+			margin: 0;
+			padding: 0;
+		}
+
+		#slider .slide {
+			float: left;
+			height: 400px; /* height:auto if image content instead of background images */
+
+			/* change these three properties to position elements differently */
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		.slide img {width:100%;}
+
+		/* helper css, since we don't have images */
+		.slide:nth-child(2) {background: url(http://fjordstudio.dk/assets/img/IMG_0449.jpg);background-size:100% auto;}
+		.slide:nth-child(3) {background:url(http://fjordstudio.dk/assets/img/bg/triangular.png);}
+		.slide:nth-child(4) {background: url(http://fjordstudio.dk/assets/img/bg/dark_embroidery.png);}
+		.slide:nth-child(6) {background: url(http://fjordstudio.dk/assets/img/bg/diamonds.png);}
+
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="plugins/basicslider.js"></script>
+	<script>
+		$(function() {
+			$('#slider').basicslider();
+		});
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Basic jQuery Slider</h1>
+
+		<!--
+			DOCUMENTATION:
+
+      Markup as shown below. The .slide class on the li-tag is unnecessary and here only used for demo styles.
+
+		-->
+
+		
+		<div id="slider">
+			<ul class="slides">
+				<li class="slide"> <img src="http://fjordstudio.dk/assets/img/IMG_0316.jpg"> </li>
+				<li class="slide">Slide 2</li>
+				<li class="slide">Slide 3</li>
+				<li class="slide">Slide 4</li>
+				<li class="slide"><img src="http://fjordstudio.dk/assets/img/IMG_4400.jpg"></li>
+				<li class="slide">Slide 6</li>
+			</ul>
+		</div>
+	</div>
+
+	<br><br>
+
+</body>
+</html>
