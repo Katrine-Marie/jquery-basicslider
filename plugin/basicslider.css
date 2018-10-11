@@ -1,0 +1,24 @@
+#basic-slider {
+  width: 100%;
+  height: 400px;
+  /* overflow: hidden; */
+  margin: 0 auto;
+}
+
+#basic-slider .slides {
+  display: block;
+  height: 400px; /* height:auto if image content instead of background images */
+  margin: 0;
+  padding: 0;
+}
+
+#basic-slider .slide {
+  float: left;
+  height: 400px; /* height:auto if image content instead of background images */
+
+  /* change these three properties to position elements differently */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+#basic-slider .slide img {width:100%;}
