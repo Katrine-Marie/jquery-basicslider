@@ -1,7 +1,7 @@
 # jQuery Basicslider Plugin
 
 ## How To Use
-Add ´<link rel="stylesheet" href="plugin/reset.css">´ and ´<link rel="stylesheet" href="plugin/basicslider.css">´ to the ´HEAD´ section.
+Add `<link rel="stylesheet" href="plugin/reset.css">´ and ´<link rel="stylesheet" href="plugin/basicslider.css">` to the ´HEAD´ section.
 
 Add a link to jQuery (eg.: ´<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>´) before the closing ´BODY´ tag.
 
