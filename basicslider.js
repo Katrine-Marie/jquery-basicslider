@@ -1,12 +1,19 @@
-$.fn.basicslider = function() {
-	
+$.fn.basicslider = function(options) {
+
+	var defaults = {
+    animationSpeed:     1000,
+		pause:							3000
+  };
+
+	var options = $.extend({}, defaults, options);
+
 	// clone first slide and append after last slide to create a continuous sliding effect
 	$("#slider .slides > *:first-child").clone().appendTo(".slides");
-	
+
 	// general variables
 	var width = 100;
-	var animationSpeed = 1000;
-	var pause = 3000;
+	var animationSpeed = options.animationSpeed;
+	var pause = options.pause;
 	var currentSlide = 1;
 
 	// caches elements
@@ -22,12 +29,12 @@ $.fn.basicslider = function() {
 	// sets width of individual slide based on percentage value
 	var slideWidth = 100/slideCount;
 	// var slideWidth = Math.round((100/slideCount) * 10000) / 10000;
-	
+
 	// appends percentage units to variables
 	slideWidth += '%';
 	width += '%';
 	sliderWidth += '%';
-	
+
 	// sets width with CSS for .slides and content slides
 	$slider.css('overflow', 'hidden');
 	$slideContainer.css('width', sliderWidth);

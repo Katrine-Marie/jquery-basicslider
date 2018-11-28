@@ -15,7 +15,7 @@
 			margin:20px auto;
 		}
 
-		/* helper css, since we don't have images */
+		/* helper css, for illustrative purposes */
 		.slide:nth-child(2) {background: url(http://fjordstudio.dk/assets/img/IMG_0449.jpg);background-size:100% auto;}
 		.slide:nth-child(3) {background:url(http://fjordstudio.dk/assets/img/bg/triangular.png);}
 		.slide:nth-child(4) {background: url(http://fjordstudio.dk/assets/img/bg/dark_embroidery.png);}
@@ -26,7 +26,10 @@
 	<script src="plugin/basicslider.js"></script>
 	<script>
 		$(function() {
-			$('#basic-slider').basicslider();
+			$('#basic-slider').basicslider({
+				animationSpeed: 750,
+				pause: 2000
+			});
 		});
 	</script>
 </head>
