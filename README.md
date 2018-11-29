@@ -21,9 +21,9 @@ These can be set as follows (shown with default values):
 ```
 $(function() {
   $('#basic-slider').basicslider({
-		animationSpeed: 1000,
-		pause: 3000
-	});
+    animationSpeed: 1000,
+    pause: 3000
+  });
 });
 ```
 
